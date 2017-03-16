@@ -1,13 +1,21 @@
+# Description #
+
+This is an extension of Ionic's Onezone Datepicker that makes the plugin flexible to change start and end dates
+
+- [Ionic market Onezone Datepicker](https://market.ionic.io/plugins/onezone-datepicker)
+- [Repository Onezone Datepicker](https://bitbucket.org/sergiu_butnarasu/onezonedatepicker.git)
+
+Credits to Sopra Steria Digital SC team <digital@sopra.com>
+
 # Introduction #
 
-Onezone Datepicker is a flexible datepicker widget that can be used in your Ionic Framework applications.
-Git repository: https://bitbucket.org/sergiu_butnarasu/onezonedatepicker
+Onezone Datepicker is a flexible datepicker widget that can be used in your Ionic Framework applications. Git repository: https://github.com/sopraux/ionic-onezone-datepicker-extended
 
 ### Who to use? ###
 
-Install onezone-datepicker using bower:
+Install ionic-onezone-datepicker-extended using bower:
 
-	bower install onezone-datepicker --save
+	bower install ionic-onezone-datepicker-extended --save
 
 Or download the file and copy it in your "lib" directory (lib/onezone-datepicker/dist/onezone-datepicker.min.js)
 
@@ -18,9 +26,9 @@ Or download the file and copy it in your "lib" directory (lib/onezone-datepicker
 2) Inject the `onezone-datepicker` dependency in your application
 
     angular.module('starter', ['ionic', 'onezone-datepicker'])
-	
+
 3) Create a Onezone Datepicker object for your needs
-	
+
 	$scope.onezoneDatepicker = {
         date: date, // MANDATORY 					
         mondayFirst: false,				
@@ -48,7 +56,7 @@ Or download the file and copy it in your "lib" directory (lib/onezone-datepicker
 
     <onezone-datepicker datepicker-object="onezoneDatepicker">
         <button class="button button-block button-outline button-positive show-onezone-datepicker">
-            {{  "{{onezoneDatepicker.date | date:'dd MMMM yyyy'}\}"   }} 
+            {{  "{{onezoneDatepicker.date | date:'dd MMMM yyyy'}\}"   }}
         </button>
     </onezone-datepicker>
 
@@ -97,7 +105,7 @@ You can define a list of dates that will be disabled in the datepicker (`[new Da
 
 11  **disableDaysOfWeek** (Optional)
 
-You can disable dates by days of week. Example: 
+You can disable dates by days of week. Example:
 
      disableDaysOfWeek: [0,1] // will disable all Sunday and Monday. (0 - Sunday, 1 - Monday)
 
@@ -107,7 +115,7 @@ Using this variable you can make the datepicker to be visible as default. Also y
 
 13) **showTodayButton** (Optional)
 
-Hide/Show today button. 
+Hide/Show today button.
 
 `NOTE: If the current date is disabled by disableWeekend or disableDates the button will automatically disappear`
 
@@ -127,7 +135,7 @@ Hide Set button.
 
 17) **highlights** (Optional)
 
-You can pass a list of objects to highlight dates. Example: 
+You can pass a list of objects to highlight dates. Example:
 
     [
         {
@@ -156,3 +164,5 @@ Represent the callback function
 [Chris Harrington](https://www.codementor.io/angularjs/tutorial/angularjs-calendar-directives-less-cess-moment-font-awesome) for inspiring me
 
 [deeepu](https://dribbble.com/deeepu) for your Nexus mockup
+
+[Sopra Steria Digital SC team](https://github.com/sopraux/) for adapting the onezone-datepicker plugin for our needs

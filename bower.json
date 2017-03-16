@@ -1,10 +1,11 @@
 {
-  "name": "onezone-datepicker",
+  "name": "ionic-onezone-datepicker-extended",
   "version": "1.2.2",
   "authors": [
-    "Sergiu Butnarasu, https://www.sergiubutnarasu.onezone.ro"
+    "Sergiu Butnarasu, https://www.sergiubutnarasu.onezone.ro",
+    "Sopra Steria Digital SC <digital@sopra.com>"
   ],
-  "description": "Onezone Datepicker - A datepicker for Ionic Framework",
+  "description": "Onezone Datepicker - A datepicker for Ionic Framework 1.x",
   "main": [
     "./dist/onezone-datepicker.min.js"
   ],
@@ -20,13 +21,13 @@
   "ignore": [
     "node_modules",
     "publish",
-	"src",
-	".gitignore",
-	"bower.json",
-	"gulpfile.js",
-	"licence.txt",
-	"package.json",
-	"README.md"
+  	"src",
+  	".gitignore",
+  	"bower.json",
+  	"gulpfile.js",
+  	"licence.txt",
+  	"package.json",
+  	"README.md"
   ],
   "dependencies": {
     "ionic": ">=1.0.0"
