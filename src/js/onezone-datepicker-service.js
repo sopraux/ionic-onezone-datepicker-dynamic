@@ -81,6 +81,7 @@ angular.module('onezone-datepicker.service', ['ionic'])
                         if (_sameDate(date, highlight.date)) {
                             var backgroundColor = '#F48685';
                             var textColor = '#fff';
+                            var show = false;
 
                             if (angular.isDefined(highlight.color)) {
                                 backgroundColor = highlight.color;
@@ -90,9 +91,14 @@ angular.module('onezone-datepicker.service', ['ionic'])
                                 textColor = highlight.textColor;
                             }
 
+                            if (angular.isDefined(highlight.show)) {
+                                show = true;
+                            }
+
                             return {
                                 color: backgroundColor,
-                                textColor: textColor
+                                textColor: textColor,
+                                show: show
                             };
                         }
                     }
